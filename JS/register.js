@@ -1,7 +1,7 @@
-$(function () {
+$("document").ready(function () {
       var ValidationPass=0;
 //    $("p").css("border", "3px solid red");
-   // $("p").css("color", "red");
+    $("p").css("color", "red");
     $("#form").submit(function (e) {
         e.preventDefault();
     });
@@ -76,6 +76,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongUser").show();
             $("#wrongUser").text("Username must be at least 5 characters");
             ValidationPass=0;
         }
@@ -96,6 +97,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongPass").show();
             $("#wrongPass").text("Password must be at least one Uppercase, Lower case and digit and special character");
             ValidationPass=0;
         }
@@ -113,6 +115,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongVerify").show();
             $("#wrongVerify").text("Password and verifyPassword must match");
             ValidationPass=0;
         }
@@ -128,6 +131,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongFirst").show();
             $("#wrongFirst").text("FirstName msut be character");
             ValidationPass=0;
         }
@@ -142,6 +146,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongLast").show();
             $("#wrongLast").text("LastName msut be character");
             ValidationPass=0;
         }
@@ -155,6 +160,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongPhone").show();
             $("#wrongPhone").text("phone number must be correct");
             ValidationPass=0;
         }
@@ -168,6 +174,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongEmail").show();
             $("#wrongEmail").text("Enter correct email");
             ValidationPass=0;
         }
@@ -181,6 +188,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongZip").show();
             $("#wrongZip").text("zip number must be 5 digit");
             ValidationPass=0;
         }
@@ -192,6 +200,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongCity").show();
             $("#wrongCity").text("Select correct city");
             ValidationPass=0;
         }
@@ -205,6 +214,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongCountry").show();
             $("#wrongCountry").text("Select correct city");
             ValidationPass=0;
         }
@@ -219,6 +229,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongState").show();
             $("#wrongState").text("Select correct State");
             ValidationPass=0;
         }
@@ -231,6 +242,7 @@ $(function () {
             ValidationPass+=1;
         }
         else{
+            $("#wrongAddress").show();
             $("#wrongAddress").text("Wrong Address!");
             ValidationPass=0;
         }

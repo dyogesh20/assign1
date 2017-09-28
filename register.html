@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script type="text/javascript" src="JS/register.js"></script>
+    <!--
+    //<script src="myJs.js" ></script>
+    -->
+
+</head>
+<div>
+
+<div class="wrap">
+    <div class="header">
+        <strong>Create an Account</strong>
+        <br>
+        <p>Please enter the following fields below to create an account. Fields in <b>bold</b> are required.</p>
+    </div>
+    <br>
+    <div class="form-main">
+        <fieldset class="limitation">
+            <form class="age">
+                <table>
+                    <tr>
+                        <td class="subject">
+                            <strong style="padding-left: 7px">Are you at least 13 years old ?</strong>
+                        </td>
+                        <td style="padding-left: 18px">
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+
+						                <input name="age" type="radio" value="Yes"></input>
+						                <b>Yes</b>
+
+                                    </span>
+                                    <input type="text" class="form-control" aria-label="...">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+
+
+
+                        </td>
+                        <td>
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+      <span class="input-group-addon">
+						<input name="age" type="radio" value="No"></input>
+						<b>No</b>
+						<button>?</button>
+
+						</span>
+                                    <input type="text" class="form-control" aria-label="...">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form class="member">
+                <table>
+                    <tr>
+                        <td class="subject">
+                            <strong>Are you a Goal Club Member ?</strong>
+                        </td>
+                        <td style="padding-left: 17px">
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+      <span class="input-group-addon">
+						<input name="member" type="radio" value="Yes"></input>
+						<b>Yes</b>
+
+						</span>
+                                    <input type="text" class="form-control" aria-label="...">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </td>
+                        <td>
+
+                            <div class="col-lg-6">
+                                <div class="input-group">
+      <span class="input-group-addon">
+						<input name="member" type="radio" value="No"></input>
+						<b>No</b>
+						<button>?</button>
+
+						</span>
+                                    <input type="text" class="form-control" aria-label="...">
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <br>
+        <fieldset class="fieldset log-info">
+            <legend><strong>Log In Information</strong></legend>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td class="subject">
+                            <strong>User Name:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 500px" type="text" class="form-control" name="username"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                           <p id="wrongUser" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Password:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 300px" type="text" class="form-control" name="password"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongPass" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Verify Password:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 300px" type="text" class="form-control" name="verifypw"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongVerify" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <br>
+
+
+
+
+
+
+
+        <div class="clear"></div>
+        <fieldset class="fieldset psn-info">
+            <legend><strong>Personal Information</strong></legend>
+            <form id="form">
+                <table>
+                    <tr>
+                        <td class="subject">
+                            <strong>First Name:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 300px" type="text" class="form-control" name="firstname"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongFirst" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            Middle Initial:
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 100px" type="text" class="form-control" name="middle"></input>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong >Last Name:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <input style="width: 300px" type="text" class="form-control" name="lastname"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongLast" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Address Line 1:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <input style="width: 500px" type="text" class="form-control" name="adline1"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongAddress" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            Address Line 2:
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 500px" type="text" class="form-control" name="adline2"></input>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>City:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 500px" type="text" class="form-control" name="city"></input>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongCity" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>State/Province:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <select style="width: 400px" name="state">
+                                <option value=""></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongState" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <b>OR </b>
+                            <br><br>
+                        </td>
+                        <td>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Other Province:</strong>
+                            <br><br>
+                        </td>
+                        <td>
+                            <input style="width: 400px" type="text" class="form-control" name="otherprovince"></input>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Zip/Postal Code:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <input style="width: 250px" type="text" class="form-control" name="zip"></input>
+                            US Residents:use 5 digit zip code
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongZip" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Country:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <select style="width: 400px" name="country" class="dropdown">
+                                <option value=""></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongCountry" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Phone Number:</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <input style="width: 300px" type="text" class="form-control" name="phone"></input>
+                            e.g.(123-456-7890)
+                            <br><br>
+                        </td>
+                        <td>
+                            <p id="wrongPhone" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="subject">
+                            <strong>Email Address</strong>
+                            <br><br>
+                        </td>
+
+                        <td>
+                            <input style="width: 500px" type="text" class="form-control" name="email"></input>
+                        </td>
+                        <td>
+                            <p id="wrongEmail" color="red"></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                </table>
+                <button id="submitteddd" ><a href="#"></a>Submit</button>
+                <br><br>
+                <p id="Validation"></p>
+            </form>
+        </fieldset>
+    </div>
+</div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</html>
